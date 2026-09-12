@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+/cases/
+/private/
+/work/
+/outputs/
+/privacy-removal-tracker.md
+/pending-bing-reports.json
