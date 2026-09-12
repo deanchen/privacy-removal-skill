@@ -1,4 +1,4 @@
 interface:
   display_name: "Privacy Removal"
-  short_description: "Find exposed home and email addresses; track removals"
-  default_prompt: "Use $privacy-removal to find my exposed home and email addresses and manage removal requests."
+  short_description: "Find exposed addresses, emails, and phones; track removals"
+  default_prompt: "Use $privacy-removal to find my exposed home addresses, email addresses, and phone numbers and manage removal requests."

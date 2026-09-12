@@ -12,6 +12,8 @@ Keep this completed file outside the skill and outside public repositories. Do n
 
 Keep emails selected for exposure checks separate from the email chosen for provider replies.
 
+For each selected phone number, record its confirmed calling code or country and whether it is current, former, or shared. Keep exposure targets separate from provider-verification numbers; leave uncertain associations unconfirmed.
+
 ## Unconfirmed associations
 
 | Potential match | Where observed | Confirmation needed |
@@ -29,11 +31,13 @@ Do not use rejected details as identity evidence.
 | Engine | Query | Checked at | Pages / extent inspected | Relevant findings / limitations |
 |---|---|---|---|---|
 
-Include a separate row for each name/address or full-email query. No result is a bounded search observation, not proof of no exposure or no breach.
+Include a separate row for each name/address, full-email, or phone-format query. For phones, record which exact, international, digits-only, or spaced variant was checked. No result is a bounded search observation, not proof of no exposure or no breach.
 
 ## Matched records and requests
 
 Use separate rows for source-site suppression and each search engine.
+
+For phone matches, include the surrounding name/context and any ownership ambiguity; a reused or shared number alone does not identify a profile as the user's.
 
 | Target URL | Provider / action | Matching evidence and its source | State | Receipt / case ID | Submitted or updated at | Review / propagation window |
 |---|---|---|---|---|---|---|

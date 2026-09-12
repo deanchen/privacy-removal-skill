@@ -1,6 +1,6 @@
 ---
 name: privacy-removal
-description: Find a user's exposed home addresses, email addresses, and other personal contact information on Google, Bing, and people-search sites; carry out authorized opt-outs and track removal decisions. Use for self-directed privacy cleanup or an explicitly authorized representative, not background checks on unrelated people.
+description: Find a user's exposed home addresses, email addresses, and phone numbers on Google, Bing, and people-search sites; carry out authorized opt-outs and track removal decisions. Use for self-directed privacy cleanup or an explicitly authorized representative, not background checks on unrelated people.
 ---
 
 # Personal information removal
@@ -15,7 +15,7 @@ Ask only for information that blocks the next useful action. Usually a name plus
 
 Keep three distinct identity sets:
 
-- User-confirmed names, residential addresses, and email addresses, including former ones.
+- User-confirmed names, residential addresses, email addresses, and phone numbers, including former ones.
 - Newly discovered associations that still need confirmation.
 - Associations the user has explicitly rejected.
 
@@ -23,7 +23,7 @@ Never turn a rejected address, possible relative, unconfirmed apartment number, 
 
 ## Keep case data private
 
-Copy [the blank tracker](assets/removal-tracker.md) to a private case directory outside the skill and any published repository. Follow the user's workspace conventions. Use owner-only file permissions where supported. Keep actual names, addresses, email messages, screenshots, profile URLs, and report identifiers in that private case, not in the reusable skill.
+Copy [the blank tracker](assets/removal-tracker.md) to a private case directory outside the skill and any published repository. Follow the user's workspace conventions. Use owner-only file permissions where supported. Keep actual names, addresses, phone numbers, email messages, screenshots, profile URLs, and report identifiers in that private case, not in the reusable skill.
 
 Record which fields a provider required without saving raw birthdates, identity-document contents, credentials, or verification tokens. Retain only the evidence needed to identify a result and verify the requested outcome. Public examples must use synthetic placeholders.
 
@@ -46,6 +46,16 @@ Search each complete email address in quotes on the requested engines, then comb
 Record the exact page URL, whether the full email is visible, its surrounding identity context, and whether the evidence is a snippet or source page. A page exposing the confirmed full address can be a match even without a name. For a removal request, select the email/contact-information category and supply the address as published. Add email monitoring only when requested and supported by the current provider; verify saved settings rather than assuming capacity or coverage.
 
 Search-engine checks do not establish whether an address is in a data breach. Breach monitoring is a separate, user-requested scope; never request passwords, test logins, send probe emails, or trigger account-recovery messages to investigate exposure.
+
+### Phone exposure checks
+
+Use only phone numbers the user has confirmed and selected for exposure checks. Keep these separate from a number used for provider verification. Record an explicit country calling code; derive one only from a user-confirmed country for that number. If it remains ambiguous, search the supplied form and ask before generating international variants.
+
+Search the exact supplied format in quotes on the requested engines, then useful international, digits-only, and spaced variants; include familiar parentheses or hyphen formatting when relevant. Preserve significant digits and use the confirmed country's numbering conventions when changing prefixes. Combine variants with the confirmed name when useful. Record the query and bounds checked; do not generate neighboring numbers or infer other numbers from a matching profile.
+
+Verify the number and its surrounding name or identity context before targeting a profile. Numbers can be shared or reassigned: a matching number alone does not establish that another person's record belongs to the user. Distinguish current, former, and shared numbers, ask about ambiguous associations, and avoid affirming unrelated profile details. Record whether the full number is visible and whether the evidence is a search snippet or source page.
+
+For an authorized removal, select the phone/contact-information category and supply the number as published with the exact target URL. Do not seek duplicate permission for an action already authorized. Phone monitoring requires the user's request and support in the current provider. Public search results do not establish a data breach; do not call, text, test logins, or trigger account-recovery probes to investigate exposure or ownership.
 
 ## Carry out authorized removals
 

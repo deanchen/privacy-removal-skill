@@ -31,9 +31,10 @@ Official entry points:
 - [Results about you guidance](https://support.google.com/websearch/answer/12719076?hl=en)
 
 Use Results about you to find contact information, request removals, and manage
-notifications. It can accept email addresses as well as other supported contact
-types. Inspect current field limits and verify saved settings; do not remove an
-existing monitored address just to fit another without the user's direction.
+notifications. It can accept email addresses and phone numbers as well as other
+supported contact types. Inspect current field limits and verify saved settings;
+do not remove an existing monitored contact detail just to fit another without
+the user's direction.
 No scan matches does not prove no listings exist. Follow the
 user's notification preferences; create automations only when requested.
 
@@ -123,7 +124,8 @@ confirm the outcome." A support auto-reply is not removal confirmation.
 
 The official group tool covers name-search reports on InstantCheckmate,
 TruthFinder, Intelius, and USSearch. Do not assume
-every PeopleConnect product is included. Terms require personal identifiers and
+every PeopleConnect product or reverse-phone result is included; verify coverage
+for the exact target. Terms require personal identifiers and
 verification of at least one email address or phone number. Read the current
 verification message and complete the authorized flow before expiry.
 

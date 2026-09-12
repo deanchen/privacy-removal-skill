@@ -1,6 +1,6 @@
 # Privacy Removal
 
-A Codex skill for finding your exposed home and email addresses, submitting authorized removal requests, and tracking what actually disappears.
+A Codex skill for finding your exposed home addresses, email addresses, and phone numbers, submitting authorized removal requests, and tracking what actually disappears.
 
 It covers Google and Bing search results, people-search opt-outs, verification email handling, manual support fallbacks, and a private removal tracker. Provider-specific instructions are starting points that must be checked against the current official service.
 
@@ -11,7 +11,7 @@ Copy [`skills/privacy-removal`](skills/privacy-removal) into your Codex skills d
 Invoke it with:
 
 ```text
-Use $privacy-removal to find my exposed home and email addresses and manage removal requests.
+Use $privacy-removal to find my exposed home addresses, email addresses, and phone numbers and manage removal requests.
 ```
 
 Provide identity details privately in your own session. The skill uses the available browser/search tools and, when authorized, an email connection. Some services require you to sign in or complete verification yourself.
@@ -19,7 +19,8 @@ Provide identity details privately in your own session. The skill uses the avail
 ## What it keeps separate
 
 - Confirmed identity details, uncertain matches, and rejected associations.
-- Email addresses being searched and the address receiving provider replies.
+- Email addresses and phone numbers being searched, and the contact details used for verification.
+- Confirmed phone ownership and numbers that may be shared or reassigned.
 - Source-site suppression and search-engine delisting.
 - Request submission, provider approval, and verified disappearance.
 
